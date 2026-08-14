@@ -1,4 +1,5 @@
 #!/bin/zsh --no-rcs
+##be sure to edit permissions as needed on your API role to match what you need
 
 url="https://YOUR-JAMF-PRO-HERE.jamfcloud.com"
 client_id="CLIENTID"
