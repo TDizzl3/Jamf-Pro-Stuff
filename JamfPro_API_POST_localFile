@@ -1,6 +1,34 @@
 #!/bin/zsh --no-rcs
 ##be sure to edit permissions as needed on your API role to match what you need
-
+####################################################################################################
+#This script's purpose is to run a POST against Jamf Pro's server to upload a local log file to the record of a device in your tenant. 
+#-Existing API Client with appropriate permissions to complete the upload
+#Permissions required for Device Lifecycle management are in the PRIVILEGES Variable
+####################################################################################################
+# Changelog:
+# Modified 08/14/2026 - Terry Nichols Jr
+####################################################################################################
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#        * Redistributions of source code must retain the above copyright
+#         notice, this list of conditions and the following disclaimer.
+#      * Redistributions in binary form must reproduce the above copyright
+#           notice, this list of conditions and the following disclaimer in the
+#           documentation and/or other materials provided with the distribution.
+#         * Neither the name of the JAMF Software, LLC nor the
+#           names of its contributors may be used to endorse or promote products
+#           derived from this software without specific prior written permission.
+# THIS SOFTWARE IS PROVIDED BY JAMF SOFTWARE, LLC "AS IS" AND ANY
+# EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL JAMF SOFTWARE, LLC BE LIABLE FOR ANY
+# DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+####################################################################################################
 url="https://YOUR-JAMF-PRO-HERE.jamfcloud.com"
 client_id="CLIENTID"
 client_secret="CLIENT SECRET"
